@@ -47,7 +47,7 @@ void loop(){
   }
   if(state == 1)
   {
-    calculateChecksum(checksum);
+    checksum = calculateChecksum(checksum);
     if (checksum = receivedData[19]){
         tempOutput = (receivedData[6] << 24) | (receivedData[5] << 16) | (receivedData[4] << 8) | receivedData[3];
         valuetoPush[1] = tempOutput;
